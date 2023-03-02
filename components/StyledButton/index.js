@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./style.js";
 
 export default function StyledButton({ buttonText = "Custom Order", type }) {
-  const backgroundColor = type == "primary" ? "#171A20CC" : "#FFFFFFA6";
-  const textColor = type == "primary" ? "#FFFFF" : "#171A20";
+  const backgroundColor = type === "primary" ? "#171A20CC" : "#FFFFFFA6";
+  const textColor = type === "primary" ? "#FFFFFF" : "#171A20";
 
   return (
     <View style={styles.container}>
